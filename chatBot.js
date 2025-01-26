@@ -1,3 +1,5 @@
+const prompt = "AI BOT is a friendly and informative chatbot.";
+
 require('dotenv/config');
 const {Client} = require('discord.js');
 const {OpenAI} = require('openai');
@@ -31,7 +33,7 @@ client.on('messageCreate', async (message) =>{
             messages:[
                 {
                     role: 'system',
-                    content: 'AI BOT is a friendly and informative chatbot.'
+                    content: prompt
                 },
                 {
                     role: 'user',
